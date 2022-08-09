@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@300;500&display=swap');
+:root{
+    --shadowCard: -5.0934px -5.0934px 15.2802px rgb(255 255 255 / 50%), 5.0934px 5.0934px 15.2802px rgb(136 160 183 / 25%);
+    --backgroundColor: hsl(212, 45%, 89%);
+    --paragraphColor: hsl(220, 15%, 55%);
+    --textColor: hsl(218, 44%, 22%);
+    --fontBody: 'Roboto', sans-serif;
+    --sizeHeading: 1.8rem;
+    --borderRadius: 1rem;
+    --sizeBody: 1.6rem;
+    --cardWidth: 25rem;
+    --weightBold: 700;
+    --pd25: 2.5rem;
+    --mg25: 2.5rem;
+}
+@media (min-width: 768px) { 
+    :root{
+        --sizeHeading: 2rem;
+        --cardWidth: 30rem;
+    }
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--backgroundColor);
+    font-family: var(--fontBody);
+    font-size: var(--sizeBody);
+    color: var(--textColor);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    line-height: 1.4;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: var(--borderRadius);
+    padding: calc(var(--pd25) - 1rem);
+    box-shadow: var(--shadowCard);
+    width: var(--cardWidth);
+    text-align: center;
+}
+.card__img{
+    border-radius: var(--borderRadius);
+    margin: 0 0 calc(var(--mg25) / 2);
+}
+.card__heading{
+    font-size: var(--sizeHeading);
+    font-weight: var(--weightBold);
+    margin: 0 0 calc(var(--mg25) / 2);
+}
+.card__paragraph{
+    color: var(--paragraphColor);
+}
+.atributtion{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.atributtion__link{
+    font-weight: var(--weightBold);
+    color: var(--textColor);
+}
