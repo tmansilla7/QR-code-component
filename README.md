@@ -1,6 +1,4 @@
-## First challenge
-
-## Frontend Mentor - QR code component
+## First challenge - Frontend Mentor - QR code component
 
 ![Design preview for the QR code component coding challenge](./assets/img/image-qr-code.png)
 
